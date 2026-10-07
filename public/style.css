@@ -1,4 +1,5 @@
 .container {
+
 	margin-top: 0px;
 	max-width: 829px;
 	display: block;
@@ -8,15 +9,17 @@
   background-size: cover;
 }
 
-body {
+.page {
 	padding: 0;
-	margin: 0.5rem;
-}
+background: #C3C2C6;
 
+background-repeat: no-repeat;
+overflow-y: none;
+}
 a {
 	font-family: arial;
 	text-decoration: underline;
-	color: white;
+	color: #2A517B;
 }
 
 .ul1 {
@@ -25,9 +28,9 @@ a {
 	padding: 0;
 	background-image: url("bar.png");
 	display: flex;
-	justify-content: flex-end;
 	max-width: 100%;
 	background-size: cover;
+	justify-content: right;
 }
 
 
@@ -40,6 +43,18 @@ a {
 	padding: 0.2rem;
 	text-decoration: none;
 	margin-right: 10px;
+	justify-self: left;
+}
+.li1-1 {
+	display: table;
+	color:#656666 ;
+	font-weight: 400;
+	font-family: arial;
+	font-size: 0.9rem;
+	padding: 0.2rem;
+	text-decoration: none;
+	margin-left: 3px;
+	margin-right: auto;
 }
 .ul2 {
 	border-top: 1px solid #6389B1;
@@ -106,6 +121,8 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+background: #DCE1E7;
+background: linear-gradient(0deg, rgba(220, 225, 231, 1) 0%, rgba(176, 193, 212, 1) 100%);
 }
 .side-window {
 	background: #DEDEDE;
@@ -116,6 +133,7 @@ a {
 	border-right: 1px solid #6389B1;
 	flex-direction: column;
 	align-items: center;
+	position: relative
 }
 .cw-topbar {
 	margin-top: 20px;
@@ -137,6 +155,17 @@ a {
 -moz-box-shadow: 0px 0px 23px -2px rgba(0,0,0,0.1);
 	overflow: auto;
 	scrollbar-width: thin;
+	scrollbar-color: #628abc #DEDEDE;
+}
+.cw-icons {
+	margin: 10px;
+	flex-direction: row;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 20px;
+}
+.cw-icons img {
+	margin: 10px;
 }
 
 
@@ -152,9 +181,10 @@ a {
 .rss-tab {
 	background-color: white;
 	width: 87%;
-	height: 55%;
+	height: 60%;
 	margin-top: 0px;
 	scrollbar-width: thin;
+	scrollbar-color: #628abc #DEDEDE;
 	overflow: auto;
 }
 
@@ -163,11 +193,11 @@ a {
 	font-weight: bold;
 	font-size: 1.18rem;
 	color: white;
-	margin-top: 80px;
+	margin-top: 60px;
 	width: 87%;
 	margin-bottom: 0px;
 	background: #648CBD;
-	padding: 8px 0px 8px 0px;
+	padding: 5px 0px 5px 0px;
 	background: linear-gradient(0deg, #648CBD 0%, #456CA0 100%);
 	text-align: center;
 }
@@ -197,10 +227,28 @@ a {
 	font-family: arial;
 	color: #194673;
 	font-weight: 500;
-	font-size: 0.85rem;
+	font-size: 0.90rem;
 	text-align: center;
 	align-self: center;
 }
+.rss-redirect {
+	background-image: url(rss-logo.png);
+	width: 22px;
+	height: 22px;
+	background-size: cover;
+	position: absolute;
+	margin-left: 2px;
+	margin-bottom: 2px;
+	bottom: 0px;
+	left: 0px;
+}
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
 .script-mid {
 	padding: 5px;
 	margin-top: 0px;
@@ -209,8 +257,11 @@ a {
 	align-self: left;
 	width: 90%;
 	opacity: 100%;
-background: #C7CDD5;
-background: linear-gradient(90deg, #C7CDD5 0%, #5D86B9 100%);
+background: #DCE1E7;
+background: linear-gradient(90deg, rgba(220, 225, 231, 1) 0%, rgba(167, 187, 214, 1) 100%);
+border-right: 5px solid #42689b;
+border-radius: 0px;
+
 }
 
 @media (max-width: 768px) {
