@@ -1,0 +1,16 @@
+---
+import { getCollection } from "astro:content";
+
+const { lang } = Astro.props;
+const posts = (await getCollection("news"))
+  .sort((a, b) => +b.data.date - +a.data.date);
+
+// "2005 - 10 - 1" — same format as your manual posts
+const d = (date) => `${date.getFullYear()} - ${date.getMonth() + 1} - ${date.getDate()}`;
+---
+{posts.map((p) => (
+  <>
+    <p class="rss-date">{d(p.data.date)}</p>
+    <p class="rss-text"><b>{p.data[`title_${lang}`]}</b><br />{p.data[`text_${lang}`]}</p>
+  </>
+))}
