@@ -5,7 +5,7 @@ const { lang } = Astro.props;
 const posts = (await getCollection("news"))
   .sort((a, b) => +b.data.date - +a.data.date);
 
-// "2005 - 10 - 1" — same format as your manual posts
+// "2005 - 10 - 1" â€” same format as your manual posts
 const d = (date) => `${date.getFullYear()} - ${date.getMonth() + 1} - ${date.getDate()}`;
 ---
 {posts.map((p) => (
