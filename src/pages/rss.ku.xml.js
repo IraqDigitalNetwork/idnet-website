@@ -13,7 +13,7 @@ export async function GET(context) {
       title: p.data.title_ku,
       description: p.data.text_ku,
       pubDate: p.data.date,
-      link: "/ku#news",
+      link: "/ku",
     })),
     customData: "<language>ku</language>",
     trailingSlash: false,

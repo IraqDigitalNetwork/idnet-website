@@ -14,7 +14,7 @@ export async function GET(context) {
       title: p.data.title_ar,
       description: p.data.text_ar,
       pubDate: p.data.date,
-      link: "/ar#news",
+      link: "/ar",
     })),
     customData: "<language>ar</language>",
     trailingSlash: false,

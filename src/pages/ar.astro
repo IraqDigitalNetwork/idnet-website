@@ -2,13 +2,13 @@
 import NewsList from "../components/NewsList.astro";
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Arabic">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>idnet</title>
     <link rel="stylesheet" href="style.css">
-        <link rel="alternate" type="application/rss+xml" title="News (EN)" href="/rss.en.xml">
+        <link rel="alternate" type="application/rss+xml" title="News (AR)" href="/rss.ar.xml">
 </head>
 <body class="page">
 <div class=container>
@@ -19,9 +19,9 @@ import NewsList from "../components/NewsList.astro";
 
 
 <ul class=ul1> <!-- Banner header bar -->
-            <a class="li1-1">IDnet</a>
-        <a class="li1" href="#">Kurdish</a>
-        <a class="li1" href="#">Arabic</a>
+            <a class="li1-1">idnet.giize.com</a>
+        <a class="li1-ar" href="/ku">كردي</a>
+        <a class="li1-ar" href="/">انجليزي</a>
 
 </ul> 
 <div class="banner">
@@ -31,7 +31,7 @@ import NewsList from "../components/NewsList.astro";
 </div> <!-- Banner bottom bar -->
 <div class="main-panel">
     <div class="side-window">
-                <h1 class="rss-title">News - RSS</h1>
+                <h1 class="rss-title">اخبار - RSS</h1>
         <div class="rss-tab">
      <NewsList lang="ar" />
         </div>
@@ -39,25 +39,23 @@ import NewsList from "../components/NewsList.astro";
 
 
 
-<div class="rss-redirect">    <a href="#" class="fill-div"></a></div>
-
+<div class="rss-redirect">    <a href="/rss.ar.xml" class="fill-div"></a></div>
 
 
     </div>
 <div class="right-panel">
     <div class="cw-topbar"></div>
     <div class="center-window" id="center-window1">
-        <h1 class="title">WELCOME TO IRAQ DIGITAL NETWORK</h1>
-<p class="script">
-  A network brings together developers and computer enthusiasts who enjoy technology, creativity, and collaboration.
-  Our goal is to spread knowledge and support local individuals.<br><br><br>
-  Be part of the community
+        <h1 class="title">
+        اهلا وسهلا بك في ديجتال عراق نيتورك</h1>
+<p class="script-ar">
+ شبكة تحمع المطورين و محبين الكمبيوتر المهتمين بالتنكنولوجيا و الفن و العمل الجماعي هدفنا هو انشاء مجتمع قوي و ودعم المطورين المستقلين
 </p>
 
 
-<p class="script-mid" style="margin-left: 10px;">Discord <br> <a href="https://discord.gg/P6pu9K3FHm">Iraq Digital Network on discord</a><a href="https://example.com/three"></a></p>
-<p class="script-mid" style="margin-left: 10px;">Reddit <br>
-    <a href="https://example.com/one">r/iraq_developers/</a> - <a href="https://example.com/three">Old Reddit Instance</a></p>
+<p class="script-mid-ar" style="margin-left: 10px;">ديسكورد <br> <a href="https://discord.gg/fKCVtjjEEj">Iraq Digital Network on discord</a><a href="https://example.com/three"></a></p>
+<p class="script-mid-ar" style="margin-left: 10px;">ريدت <br>
+    <a href="https://www.reddit.com/r/iraq_developers/">r/iraq_developers/</a> - <a href="https://old.reddit.com/r/iraq_developers/">Old Reddit Instance</a></p>
 
 <pre style="
     margin: 10px 22px 10px 10px;
@@ -71,9 +69,9 @@ import NewsList from "../components/NewsList.astro";
         white-space: pre-wrap;  
 ">
 <code>
-[Tor] idnet02902sa82dn2d8hdu2su22edj.onion
+[تور] idnet02902sa82dn2d8hdu2su22edj.onion
 [I2P] idnet023032.i2p
-[ClearNet] idnet.dev
+[الشبكة العامة] idnet.giize.com
 </code>
 </pre>
 <div class="cw-icons">
@@ -84,8 +82,9 @@ import NewsList from "../components/NewsList.astro";
 </div>
 
 </div>
-<ul class="ul2"> <!-- footer --><li class="li2">This website operates in accordance with the laws of the Iraq</li>
-<a class="li3" href="ss">Site Source</a>
+<ul class="ul2"> <!-- footer --><li class="li2-ar">
+هذا الموقع الالكتروني يعمل وفقا للقانون و الدستور العراقي</li>
+<a class="li3" href="https://www.reddit.com/message/compose?to=r/iraq_developers">Email us!</a>
 
 </ul> 
 </div>
