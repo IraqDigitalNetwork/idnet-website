@@ -1,6 +1,6 @@
 import { defineConfig } from "astro/config";
 
 export default defineConfig({
-  site: "https://YOUR-SITE.netlify.app",
+  site: "https://idnet.giize.com/",
   build: { format: "file" },
 });
